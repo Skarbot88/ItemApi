@@ -3,7 +3,8 @@ using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 namespace ItemApi.Repository
 {
-    public class InMemRepo
+
+    public class InMemRepo : IInMemRepo
     {
         private readonly List<Item> items = new()
         {
@@ -13,7 +14,7 @@ namespace ItemApi.Repository
             new Item {Id = Guid.NewGuid(), Name = "Bronze Shield", Price = 60, CreatedDate = DateTimeOffset.Now},
         };
 
-        public IEnumerable<Item> GetItems() 
+        public IEnumerable<Item> GetItems()
         {
             return items;
         }
