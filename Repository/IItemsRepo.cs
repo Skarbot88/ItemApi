@@ -2,7 +2,7 @@ using ItemAPI.Entities;
 
 namespace ItemApi.Repository
 {
-    public interface IInMemRepo
+    public interface IItemsRepo
     {
         Item GetItem(Guid id);
         IEnumerable<Item> GetItems();

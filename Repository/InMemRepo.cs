@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Components.Web.Virtualization;
 namespace ItemApi.Repository
 {
 
-    public class InMemRepo : IInMemRepo
+    public class InMemRepo : IItemsRepo
     {
         private readonly List<Item> items = new()
         {
