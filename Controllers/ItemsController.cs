@@ -14,9 +14,9 @@ namespace ItemApi.Controllers
     [Route("items")]
     public class ItemsController : ControllerBase
     {
-        private readonly IInMemRepo _repository;
+        private readonly IItemsRepo _repository;
 
-        public ItemsController(IInMemRepo repository)
+        public ItemsController(IItemsRepo repository)
         {
             _repository = repository; 
         }
